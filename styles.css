@@ -1,0 +1,100 @@
+/* Reseta os estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhlCs3Z6-Ge5HGbPnOytcogAeZRxC5n2L2g&s') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff4081;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff79b0;
+}
+
+/* Seção de flores */
+#floresSection {
+  margin-top: 20px;
+  text-align: center;
+  display: none; /* Inicialmente escondido */
+  width: 100%;
+}
+
+#floresSection img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#floresSection p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffe082;
+  padding: 0 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #floresSection img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #floresSection p {
+    font-size: 1rem;
+  }
+}
+
